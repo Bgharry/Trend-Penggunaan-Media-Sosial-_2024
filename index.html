@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tren Penggunaan Media Sosial Global (2015–2024)</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Tren Penggunaan Media Sosial Global (2015–2024)</h1>
+    <p class="subtitle">Analisis pengguna aktif per platform media sosial — interaktif dengan filter tahun</p>
+    <div class="identity">
+      <p><strong>Harry Zulkifli</strong> — NIM 220660121081</p>
+      <p>Fakultas Teknologi Informasi — Prodi Informatika — Kelas 7D</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="controls">
+      <label for="yearSelect">Pilih Tahun:</label>
+      <select id="yearSelect"></select>
+      <p class="help">Data berikut menunjukkan pertumbuhan pengguna media sosial dari tahun ke tahun (satuan: juta pengguna).</p>
+    </div>
+
+    <section class="chart-container">
+      <h2>1️⃣ Tren Global Total Pengguna (2015–tahun terpilih)</h2>
+      <canvas id="lineChart"></canvas>
+      <p class="desc">Line chart menampilkan total pengguna (semua platform) dari 2015 hingga tahun yang dipilih.</p>
+    </section>
+
+    <section class="chart-container">
+      <h2>2️⃣ Distribusi Pengguna per Platform (tahun terpilih)</h2>
+      <canvas id="barChart"></canvas>
+      <p class="desc">Bar chart menampilkan jumlah pengguna setiap platform pada tahun yang dipilih.</p>
+    </section>
+
+    <section class="chart-container">
+      <h2>3️⃣ Proporsi Pengguna Global per Platform (tahun terpilih)</h2>
+      <canvas id="pieChart"></canvas>
+      <p class="desc">Pie chart menunjukkan persentase pengguna tiap platform pada tahun yang dipilih.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dibuat oleh <strong>Harry Zulkifli</strong> (NIM: 220660121081) — Fakultas Teknologi Informasi — Program Studi Informatika — Kelas 7D — Universitas Sebelas April (2025)</p>
+  </footer>
+
+  <script src="dataset.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
